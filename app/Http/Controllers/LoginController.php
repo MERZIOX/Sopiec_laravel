@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Auth\Events\Validated;
 
 class LoginController extends Controller
 {
@@ -34,7 +36,23 @@ class LoginController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $user = User::where('cc', $request->username)
+            ->first();
+
+
+        if (empty($user)) {
+            return back()->with("noExiste", "No existe un usuario con esas credenciales");
+        } else {
+            if ($user->cc == $request->username) {
+                if ($user->password == $request->password) {
+                    $request->session()->put("username", $user->cc);
+                    return redirect('inicio');
+                } else {
+                    return back()->with("noPass", "Contraseña incorrecta");
+                }
+            }
+        };
     }
 
     /**
