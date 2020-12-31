@@ -13,7 +13,7 @@ class InicioAdminController extends Controller
      */
     public function index()
     {
-        return view('Master');
+        return view('dashboard.admin.index');
     }
 
     /**
@@ -23,7 +23,7 @@ class InicioAdminController extends Controller
      */
     public function create()
     {
-        
+        return view('dashboard.admin.createNewUser');
     }
 
     /**

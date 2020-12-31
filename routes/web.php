@@ -23,4 +23,4 @@ use Illuminate\Support\Facades\Route;
 
 //Un controlador de tipo resource es más amplio, sirve para manejar los distintos metodos
 Route::resource('/', 'App\Http\Controllers\LoginController');
-Route::resource('/inicio', 'App\Http\Controllers\InicioAdminController');
+Route::resource('/inicio', App\Http\Controllers\InicioAdminController::class);

@@ -12,14 +12,14 @@
         <ul class="nav">
             {{-- li Dashboard --}}
             <li class="nav-item active  ">
-                <a class="nav-link" href="./dashboard.html">
+                <a class="nav-link" href="{{asset('/inicio')}} ">
                     <i class="material-icons">dashboard</i>
                     <p>Dashboard</p>
                 </a>
             </li>
             {{-- li Perfil de usuario --}}
             <li class="nav-item ">
-                <a class="nav-link" href="./user.html">
+                <a class="nav-link" href="">
                     <i class="material-icons">person</i>
                     <p>Perfil de usuario</p>
                 </a>
@@ -36,9 +36,9 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
                     <a class="dropdown-item" href="#"><i class="material-icons">group</i>Ver listado de
-                        ususarios</a>
+                        usuarios</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#"><i class="material-icons">group_add</i>Crear nuevo ususario</a>
+                    <a class="dropdown-item" href="{{route('inicio.create') }} "><i class="material-icons">group_add</i>Crear nuevo usuario</a>
                 </div>
             </li>
 
