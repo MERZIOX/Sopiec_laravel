@@ -51,7 +51,7 @@
             </div>
             <div>
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-                <p class="mt-5 mb-3 text-muted text-center"><a href="{{ route('inicio.index') }}">Forgot password?</a>
+                <p class="mt-5 mb-3 text-muted text-center"><a href="{{ route('users.index') }}">Forgot password?</a>
                 </p>
             </div>
 
