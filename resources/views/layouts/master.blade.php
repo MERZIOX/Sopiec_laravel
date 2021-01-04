@@ -28,6 +28,7 @@
         {{-- Contenedor central --}}
         <div class="main-panel">
             <div class="content">
+                @include('dashboard.partials.session-flash-status')
                 @yield('content')
                 @include('dashboard.partials.footer')
             </div>
