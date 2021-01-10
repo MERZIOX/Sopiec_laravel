@@ -102,7 +102,7 @@
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label class="bmd-label-floating">Contraseña</label>
-                                            <input type="password" class="form-control" name="password">
+                                            <input type="password" class="form-control" name="password" id="password">
                                             @error('password')
                                                 <small class="text-danger"> {{ $message }} </small>
                                             @enderror
@@ -111,7 +111,8 @@
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label class="bmd-label-floating">Confirmar Contraseña</label>
-                                            <input type="password" class="form-control" name="confirmPassword">
+                                            <input type="password" class="form-control" name="password_confirmation"
+                                                id="password_confirmation">
                                         </div>
                                     </div>
                                 </div>
