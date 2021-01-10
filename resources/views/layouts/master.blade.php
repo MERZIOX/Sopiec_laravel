@@ -36,7 +36,7 @@
     </div>
     {{-- Dropdown para personalizar el sidebar
     --}}
-    @include('dashboard.partials.dropdown')
+    {{-- @include('dashboard.partials.dropdown') --}}
 </body>
 
 <!--   Core JS Files   -->
