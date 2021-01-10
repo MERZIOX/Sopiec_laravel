@@ -40,7 +40,6 @@
                         </thead>
                         <tbody>
                             @foreach ($users as $user)
-
                                 <tr>
                                     <td>{{ $user->cc }} </td>
                                     <td>{{ $user->area }} </td>
